@@ -1,13 +1,14 @@
 import Sidebar from './components/sidebar/Sidebar';
 import Toolbar from './components/toolbar/Toolbar';
 import './App.css';
+import Home from './pages/home/Home';
 function App() {
 	return (
 		<div>
 			<Toolbar />
 			<div className='container'>
 				<Sidebar />
-				<div className='others'> others pages</div>
+				<Home />
 			</div>
 		</div>
 	);
