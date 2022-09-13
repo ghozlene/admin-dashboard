@@ -3,3 +3,7 @@
 	margin: 0.8rem;
 	font-family: 'Source Sans Pro', sans-serif;
 }
+.links {
+	text-decoration: none;
+	color: inherit;
+}

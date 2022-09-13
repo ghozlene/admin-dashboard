@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Sidebar.css';
 import LineStyleIcon from '@mui/icons-material/LineStyle';
 import TimelineIcon from '@mui/icons-material/Timeline';
@@ -9,6 +11,7 @@ import MarkEmailUnreadIcon from '@mui/icons-material/MarkEmailUnread';
 import Inventory2Icon from '@mui/icons-material/Inventory2';
 import ForumIcon from '@mui/icons-material/Forum';
 import ChatIcon from '@mui/icons-material/Chat';
+
 const Sidebar = () => {
 	return (
 		<div className='sidebar'>
@@ -34,20 +37,25 @@ const Sidebar = () => {
 
 					<h3 className='sidebarTitle'>Quick Menu</h3>
 					<ul className='sidebarList'>
-						<li className='sidebarListItem active'>
-							<Person2Icon className='sidebarIcon' />
-							User
-						</li>
+						<Link to='/users' className='links'>
+							<li className='sidebarListItem '>
+								<Person2Icon className='sidebarIcon' />
+								User
+							</li>
+						</Link>
+						<Link to='/products' className='links'>
+							<li className='sidebarListItem'>
+								<Inventory2Icon className='sidebarIcon' />
+								Products
+							</li>
+						</Link>
 
-						<li className='sidebarListItem'>
-							<Inventory2Icon className='sidebarIcon' />
-							Products
-						</li>
-
-						<li className='sidebarListItem'>
-							<AttachMoneyIcon className='sidebarIcon' />
-							Transactions
-						</li>
+						<Link to='/transactions' className='links'>
+							<li className='sidebarListItem'>
+								<AttachMoneyIcon className='sidebarIcon' />
+								Transactions
+							</li>
+						</Link>
 					</ul>
 
 					<h3 className='sidebarTitle'>Notifications</h3>
