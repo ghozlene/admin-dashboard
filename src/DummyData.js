@@ -48,3 +48,47 @@ export const userData = [
 		Active_User: 9490,
 	},
 ];
+
+/*************For Table */
+
+export const rows = [
+	{
+		id: 1,
+		username: 'Ghozlene Med Achref',
+		avatar:
+			'https://thumbs.dreamstime.com/b/happy-smiling-geek-hipster-beard-man-cool-avatar-geek-man-avatar-104871313.jpg',
+		email: 'ghozlene@gmail.com',
+		status: 'active',
+		transaction: '$362.54',
+	},
+
+	{
+		id: 2,
+		username: 'Med Achref',
+		avatar:
+			'https://thumbs.dreamstime.com/b/happy-smiling-geek-hipster-beard-man-cool-avatar-geek-man-avatar-104871313.jpg',
+		email: 'medachref@gmail.com',
+		status: 'active',
+		transaction: '$62.54',
+	},
+
+	{
+		id: 3,
+		username: 'Achref',
+		avatar:
+			'https://thumbs.dreamstime.com/b/happy-smiling-geek-hipster-beard-man-cool-avatar-geek-man-avatar-104871313.jpg',
+		email: 'achref@gmail.com',
+		status: 'active',
+		transaction: '$262.54',
+	},
+
+	{
+		id: 4,
+		username: 'jon snow',
+		avatar:
+			'https://thumbs.dreamstime.com/b/happy-smiling-geek-hipster-beard-man-cool-avatar-geek-man-avatar-104871313.jpg',
+		email: 'jonsnow@gmail.com',
+		status: 'active',
+		transaction: '$162.54',
+	},
+];
