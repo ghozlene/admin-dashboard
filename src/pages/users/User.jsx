@@ -18,7 +18,7 @@ const User = () => {
 			width: 200,
 			renderCell: (params) => {
 				return (
-					<div className='userListUser'>
+					<div className='userListUser' key={params.row.id}>
 						<img className='userListImage' src={params.row.avatar} alt='' />
 						{params.row.username}
 					</div>
@@ -35,7 +35,7 @@ const User = () => {
 			width: 150,
 			renderCell: (params) => {
 				return (
-					<>
+					<div key={params.row.id}>
 						<Link to={'/user/' + params.row.id} target='_parent'>
 							<button className='userListEdit'>Edit</button>
 						</Link>
@@ -46,7 +46,7 @@ const User = () => {
 								handleDelete(params.row.id);
 							}}
 						/>
-					</>
+					</div>
 				);
 			},
 		},
